@@ -328,7 +328,7 @@ a {
 
 .article {
     position: relative;
-    height: 100vh;
+    height: fit-content;
 }
 .article .container {
     position: relative;
@@ -455,3 +455,54 @@ a {
 /* Gallery */
 
 
+.gallery {
+    position: relative;
+}
+.gallery .container {
+    display: flex;
+    flex-direction: column;
+}
+.gallery .container .boxs {
+    position: relative;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.gallery .container .boxs .box {
+    position: relative;
+    border: 15px solid rgb(255, 255, 255) ;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+    flex-basis: 26%;
+}
+.gallery .container .box img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.gallery .container .boxs .box:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+@media (max-width:400px) {
+    .gallery .container .boxs .box {
+        flex-basis: 95%;
+        margin:0 20px;
+        box-sizing: border-box;
+    }
+}
+@media (min-width:400px) and (max-width:675px){
+    .gallery .container .boxs .box {
+        flex-basis: 95%;
+        margin:0 60px;
+        box-sizing: border-box;
+    }
+}
+@media (min-width:675px) and (max-width:992px) {
+    .gallery .container .boxs .box {
+        flex-basis: 45%;
+        box-sizing: border-box;
+    }
+}

@@ -461,9 +461,10 @@ a {
 .gallery .container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px ;
 }
 .gallery .container .lable {
-    margin-top: 10px ;
+    margin-top: 30px ;
 }
 .gallery .container .boxs {
     position: relative;

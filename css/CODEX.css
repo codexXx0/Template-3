@@ -554,14 +554,13 @@ a {
 .features .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 .features .container .boxs {
     display: flex;
     gap: 40px;
-    justify-content: space-around;
-    padding-bottom: 50px ;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .features .container .boxs .box {
     flex-basis: 30%;

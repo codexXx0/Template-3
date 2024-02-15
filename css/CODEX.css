@@ -282,6 +282,9 @@ a {
     .landing .container img {
         display: none;
     }
+    .landing i {
+        bottom:80px;
+    }
 }
 @media (min-width:400px) and (max-width:1200px) {
     .landing {
@@ -604,7 +607,7 @@ a {
     background-color: rgba(0, 88, 129, 0.486);
 }
 .features .container .boxs .img::after {
-    content: "";
+    /* content: ""; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -630,10 +633,11 @@ a {
     display: block;
     padding: 10px;
     border-bottom: 5px solid ;
+    margin-top: 0;
 }
 .features .container .boxs .box p {
     color: rgb(73, 73, 73);
-    padding: 15px;
+    padding: 25px 15px;
     line-height: 1.5;
 }
 .features .container .box .a {

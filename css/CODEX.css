@@ -640,3 +640,18 @@ a {
 .features .container .boxs .three .txt a {
     color: #03A9F4;
 }
+@media (max-width:400px) {
+    .features .container .boxs .box {
+        flex-basis: 90%;
+    }
+}
+@media (min-width:400px) and (max-width:675px) {
+    .features .container .boxs .box {
+        flex-basis: 70%;
+    }
+}
+@media (min-width:675px) and (max-width:992px) {
+    .features .container .boxs .box {
+        flex-basis: 46%;
+    }
+}

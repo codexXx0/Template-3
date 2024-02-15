@@ -344,7 +344,7 @@ a {
     font-weight: bold;
     font-size: 35px;
     padding: 10px 30px;
-    border: 1px solid black;
+    border: 2px solid black;
     width: fit-content;
     margin-bottom: 50px;
     margin-top: 40px;
@@ -636,8 +636,9 @@ a {
     margin-top: 0;
 }
 .features .container .boxs .box p {
-    color: rgb(73, 73, 73);
-    padding: 25px 15px;
+    color: rgb(155, 155, 155);
+    padding: 15px 15px;
+    font-size: 20px;
     line-height: 1.8;
 }
 .features .container .box .a {
@@ -749,5 +750,80 @@ a {
     }
     100% {
         width: 100%;
+    }
+}
+
+
+/* Testmonials */
+
+.testmonial {
+    background-color:#ECECEC;
+}
+.testmonial .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+.testmonial .container .lable {
+    margin: 70px 0;
+}
+.testmonial .container .boxs {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px 0;
+}
+.testmonial .container .boxs .box {
+    position: relative;
+    flex-basis: 26%;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(112, 112, 112, 0.164);
+    padding: 20px;
+    border-radius: 10px;
+}
+.testmonial .container .boxs .box img {
+    position: absolute;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    border: 10px solid #ECECEC ;
+    left: calc(100% - 97px) ;
+    bottom:  calc(100% - 50px) ;
+}
+.testmonial .container .boxs h2 {
+    font-weight: bold;
+    font-size: 21px;
+    margin: 10px 0;
+}
+.testmonial .container .boxs h4 {
+    font-weight: normal;
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.726);
+}
+.testmonial .container .boxs p {
+    color: rgba(0, 0, 0, 0.726);
+    margin-top: 20px;
+}
+.testmonial .container .boxs .fa-solid {
+    color: #FFC107;
+}
+@media (min-width:675px) and (max-width:1200px) {
+    .testmonial .container .boxs .box {
+        flex-basis: 40%;
+    }
+}
+@media (min-width:400px) and (max-width:675px) {
+    .testmonial .container .boxs .box {
+        flex-basis: 60%;
+    }
+}
+@media (max-width:400px) {
+    .testmonial .container .boxs .box {
+        flex-basis: 80%;
     }
 }

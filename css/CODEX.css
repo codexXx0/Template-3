@@ -282,6 +282,9 @@ a {
     .landing .container img {
         display: none;
     }
+    .landing i {
+        bottom:80px;
+    }
 }
 @media (min-width:400px) and (max-width:1200px) {
     .landing {

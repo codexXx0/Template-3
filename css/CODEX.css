@@ -1172,6 +1172,18 @@ a {
     display: block;
     height: 100%;
 }
+@media (max-width:400px) {
+    .skills .container .boxs {
+        width:80%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:400px) and (max-width:675px) {
+    .skills .container .boxs {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 @media (max-width:992px) {
     .skills .container .boxs img {
         display: none;

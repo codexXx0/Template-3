@@ -897,6 +897,7 @@ a {
     gap: 40px  20px;
     justify-content: space-evenly;
     padding: 50px 0;
+    padding-bottom: 100px;
 }
 .team .container .boxs .box {
     position: relative;
@@ -1009,4 +1010,74 @@ a {
     .team .container .boxs .box .data img {
         max-width: 300px ;
     }
+}
+
+
+/* Services */
+
+.services {
+    position: relative;
+}
+.services::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:#ECECEC;
+    position: absolute;
+    z-index: -2;
+}
+.services .container .boxs .box{
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow:  0 0 10px rgba(180, 180, 180, 0.562);
+}
+.services .container .boxs .box i {
+    font-size: 80px;
+    color: #D5D5D5;
+    padding-top: 30px;
+}
+.services .container .box h1 {
+    color: var(--main-color );
+}
+.services .container .boxs .box .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .container .box .footer .num {
+    position: relative;
+    color: white;
+    background-color: var(--main-color);
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.services .container .box .footer .num::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 99%;
+    background-color: var(--main-color);
+    top: 0;
+    right: -10px;
+    transform: skewX(-20deg);
+}
+.services .container .box .footer .num::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    background-color:rgb(216, 216, 216);
+    top: 0;
+    right: -40px;
+    transform: skewX(-20deg);
+}
+.services .container .boxs .box .footer a {
+    color: var(--main-color);
+    padding: 10px ;
 }

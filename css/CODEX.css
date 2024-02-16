@@ -1189,3 +1189,89 @@ a {
         display: none;
     }    
 }
+
+
+/* Start How IT Works?  */
+
+.how {
+    position: relative;
+}
+.how::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:#ECECEC;
+    position: absolute;
+    z-index: -2;
+}
+.how .boxs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.how .boxs .img {
+    max-width: 100%;
+}
+.how .steps {
+    position: relative;
+    flex-basis: 60%;
+    flex: 1;
+    width: 100%;
+}
+.how .container .steps .step {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    max-width: 550px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 25px auto ;
+}
+.how .container .steps .step::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #ececec;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.how .container .steps .step:hover::before {
+    width: 100%;
+    height: 100%;
+}
+.how .container .steps .step img {
+    max-width: 60px;
+    max-height: 60px;
+    align-self: center;
+    padding: 10px 20px;
+    padding-left: 0;
+    z-index: 1;
+}
+.how .container .steps .step .txt {
+    line-height: 1.6;
+    z-index: 1;
+}
+.how .container .steps .step .txt h2 {
+    margin-bottom: 5px
+}
+.how .container .steps .step .txt p {
+    margin-top: 0;
+}
+@media (max-width:675px) {
+    .how .container .steps .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    .how .container .steps .step img {
+        padding-top: 15px;
+    }
+    .how .container .steps .step .txt h2 {
+        margin-top: 0;
+    }
+}

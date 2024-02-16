@@ -1029,12 +1029,32 @@ a {
     z-index: -2;
 }
 .services .container .boxs .box{
+    position: relative;
     text-align: center;
     background-color: white;
-    width: 350px;
     border-radius: 5px;
     overflow: hidden;
+    top: 0;
     box-shadow:  0 0 10px rgba(180, 180, 180, 0.562);
+    transition: 0.3s ease-in-out;
+}
+.services .container .boxs .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 000%;
+    height: 4px;
+    background-color: var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+.services .container .boxs .box:hover::before {
+    width: 100%;
+}
+.services .container .boxs .box:hover {
+    top: -15px;
+    box-shadow:  0 0 10px rgba(143, 143, 143, 0.562);
 }
 .services .container .boxs .box i {
     font-size: 80px;
@@ -1080,4 +1100,29 @@ a {
 .services .container .boxs .box .footer a {
     color: var(--main-color);
     padding: 10px ;
+}
+@media (max-width:400px) {
+    .services .container .boxs .box {
+        width: 320px;
+    }
+}
+@media (min-width:400px) and (max-width:675px) {
+    .services .container .boxs .box {
+        width: 400px;
+    }
+}
+@media (min-width:675px) and (max-width:992px) {
+    .services .container .boxs .box {
+        flex-basis: 45%;
+    }
+}
+@media (min-width:992px) and (max-width:1200px) {
+    .services .container .boxs .box {
+        flex-basis: 45%;
+    }
+}
+@media (min-width:1200px) {
+    .services .container .boxs .box {
+        flex-basis: 30%;
+    }
 }

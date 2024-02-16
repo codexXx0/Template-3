@@ -967,7 +967,13 @@ a {
 .team .container .box .info h2 {
     color: var(--main-color);
 }
-@media (max-width:675px) {
+@media (max-width:400px) {
+    .team .container .boxs .box .data img {
+        max-width: 250px ;
+    }
+
+}
+@media (min-width:400px) and (max-width:675px) {
     .team .container .boxs .box {
         flex-basis: 80%;
     }

@@ -1129,3 +1129,51 @@ a {
         flex-basis: 30%;
     }
 }
+
+
+/* Start Skills  */
+
+.skills {
+    position: relative;
+}
+.skills .container .boxs {
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+.skills .container .boxs .progress  {
+    display: flow;
+    align-self: center;
+    flex: 1;
+}
+.skills .container .boxs .progress .prog {
+    padding: 5px 0;
+}
+.skills .container .boxs .progress .prog h3 {
+    display: flex;
+    justify-content: space-between;
+}
+.skills .container .boxs .progress .prog h3 span {
+    color: var(--main-color);
+    font-size: medium;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.205) ;
+    border-radius: 5px;
+}
+.skills .container .boxs .progress .prog .theprog {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #dadada;
+}
+.skills .container .boxs .progress .prog .theprog span {
+    background-color: var(--main-color);
+    position: relative;
+    display: block;
+    height: 100%;
+}
+@media (max-width:992px) {
+    .skills .container .boxs img {
+        display: none;
+    }    
+}

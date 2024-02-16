@@ -1240,7 +1240,7 @@ a {
     display: flex;
     position: relative;
     background-color: rgb(255, 255, 255);
-    max-width: 550px;
+    max-width: 100%;
     padding: 0px 20px;
     border-radius: 10px;
     border: 3px solid rgb(255, 255, 255);
@@ -1290,5 +1290,10 @@ a {
     }
     .how .container .steps .step .txt h2 {
         margin-top: 0;
+    }
+}
+@media (min-width:1090px) {
+    .how .container .steps .step {
+        margin-left: 50px;
     }
 }

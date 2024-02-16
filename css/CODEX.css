@@ -54,7 +54,7 @@ a {
     height: 15px;
     border-radius: 50%;
     background-color: var(--main-color);
-    left: -30%;
+    left: -30px;
     top: calc(50% - 12px);
     transition: 0.5s ease;
     z-index: -1;
@@ -66,7 +66,7 @@ a {
     height: 15px;
     border-radius: 50%;
     background-color: var(--main-color);
-    right:  -30%;
+    right:  -30px;
     top: calc(50% - 12px);
     transition: 0.5s ease;
     z-index: -1;

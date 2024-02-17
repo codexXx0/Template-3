@@ -1369,7 +1369,7 @@ a {
 }
 @media (min-width:0px) and (max-width:400px) {
     .events .container .boxs img {
-        max-width: 60%;
+        max-width: 80%;
         align-self: center;
     }    
     .events .container .boxs .box {

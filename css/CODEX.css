@@ -37,7 +37,7 @@ a {
     padding: 10px 30px;
     border: 2px solid black;
     width: fit-content;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     transition-delay: 0.4s;
 }
 .container .dots {
@@ -179,25 +179,25 @@ a {
     color: rgb(0, 0, 0);
 }
 .header .container .mainul .special {
-    position: relative;
+    position: static;
     display: block;
 }
 .megamenu {
     display: flex;
-    position: fixed;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
     background-color: white;
-    top: 100px;
     border-bottom: var(--main-color) 3px solid;
-    width:75%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     justify-content: space-around;
-    visibility: hidden;
-    opacity: 0 ; 
     transition: 0.3s ease-in-out;
     z-index: 10;
+    top: 78px;
 }
-.header .container .mainul .special:hover  .megamenu  {
+.header .container .mainul .special:hover .megamenu  {
     opacity: 1;
     visibility: visible;
     top: 78px  ;
@@ -232,7 +232,7 @@ a {
 }
 @media (max-width:400px) {
     .header .container {
-        width: 95%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
@@ -253,11 +253,12 @@ a {
         flex-direction: column;
         padding: 15px 0 ;
         width: 100%;
+        top: 110px;
     }
     .header .container .megamenu img {
         display: none;
     }
-    .header .container .mainul:hover + .megamenu  {
+    .header .container .mainul:hover .megamenu  {
         top: 99px !important ;
     }
     .header .container .megamenu .links {
@@ -282,12 +283,13 @@ a {
         padding: 15px 20px;
         margin: 10px 0;
     }
-    .header .container .mainul .special:hover .megamenu {
-        top: 120px;
+    .header .container .mainul .special:hover  .megamenu {
+        top: 110px;
         width: 90%;
     }
     .header .container .megamenu {
         justify-content: space-around;
+        top: 110px;
     }
     .header .container .megamenu img {
         display: none;
@@ -1313,12 +1315,29 @@ a {
 .events {
     position: relative;
 }
+.dotup{
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    height: 186px;
+    width: 204px;
+    right: 0;
+    top: 100px;
+}
+.dotdown{
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    height: 186px;
+    width: 204px;
+    left: 0;
+    bottom: 100px;
+}
 .events .container {
     padding-bottom: 100px;
 }
 .events .container .boxs img {
-    max-width: 40%;
+    max-width: 45%;
     align-self: center;
+    z-index: 1;
 }
 .events .container .boxs .box {
     display: flex;
@@ -1336,6 +1355,7 @@ a {
     margin: 20px 10px;
     border-radius: 5px;
     border: 1px solid rgb(168, 168, 168);
+    background-color: white ;
 }
 .events .container .boxs .box .timer .time h5 {
     margin-bottom: 0;
@@ -1354,10 +1374,13 @@ a {
     margin: 0 auto ;
 }
 .events .container .footer form input[type=email] {
+    position: relative;
     padding: 10px  ;
     width: 300px;
     border: none;
     outline: none;
+    background-color: white;
+    z-index: 1;
 }
 .events .container .footer form input[type=submit] {
     background-color: var(--main-color);
@@ -1377,6 +1400,10 @@ a {
     .events .container .footer form input[type=email] {
         width: 150px;
     }
+    .dotup ,
+    .dotdown {
+        display: none;
+    }
 }
 @media (min-width:400px) and (max-width:675px) {
     .events .container .boxs img {
@@ -1385,5 +1412,9 @@ a {
     }    
     .events .container .footer form input[type=email] {
         width: 200px;
+    }
+    .dotup ,
+    .dotdown {
+        display: none;
     }
 }

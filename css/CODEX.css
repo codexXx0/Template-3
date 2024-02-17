@@ -1297,3 +1297,82 @@ a {
         margin-left: 50px;
     }
 }
+
+
+/* Start Events */
+
+.events {
+    position: relative;
+}
+.events .container {
+    padding-bottom: 100px;
+}
+.events .container .boxs img {
+    max-width: 40%;
+    /* height: 100%; */
+    align-self: center;
+}
+.events .container .boxs .box {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.events .container .boxs  .box .timer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.events .container .boxs .box .timer .time {
+    margin: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.events .container .boxs .box .timer .time h5 {
+    margin-bottom: 0;
+    margin-top: 0;
+    border-top: 1px solid;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+.events .container .boxs .box .timer .time .num {
+    margin: 15px 5px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+.events .container .footer {
+    margin: 0 auto ;
+}
+.events .container .footer form input[type=email] {
+    padding: 10px  ;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.events .container .footer form input[type=submit] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: navajowhite;
+}
+@media (min-width:00px) and (max-width:400px) {
+    .events .container .boxs img {
+        max-width: 60%;
+        align-self: center;
+    }    
+    .events .container .boxs .box {
+        flex: 1;
+    }    
+    .events .container .footer form input[type=email] {
+        width: 150px;
+    }
+}
+@media (min-width:400px) and (max-width:675px) {
+    .events .container .boxs img {
+        max-width: 60%;
+        align-self: center;
+    }    
+}

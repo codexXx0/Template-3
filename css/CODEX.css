@@ -1625,7 +1625,7 @@ a {
 .stats {
     position: relative;
     text-align: center;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 .stats::before {
     content: "";
@@ -1695,5 +1695,155 @@ a {
 @media (min-width:400px) and (max-width:675px) {
     .stats .container .boxs .box {
         width: 200px;
+    }
+}
+
+
+/* Start rad */
+
+.rad {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    height: 100vh;
+}
+.rad .image {
+    position: relative;
+    background-image: url(../imgs/discount-background1.jpg);
+    max-width: 100%;
+    flex-basis: 50%;
+    height: 100%;
+    animation: change 10s linear  infinite  ;
+}
+.rad .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    opacity: 0.95;
+}
+.rad .image .one {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.rad .image .one h1 {
+    font-size: 45px;
+}
+.rad .image .one p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+.rad .image .one img {
+    max-width: 300px;
+}
+.rad .two {
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+.rad  .two h1 {
+    font-size: 45px;
+}
+.rad .two form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.rad .two form input{
+    padding: 20px 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+.rad .two form input[type=text] ,
+.rad .two form input[type=email] ,
+.rad .two form input[type=tel]  {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.rad .two form textarea{
+    padding: 20px 10px;
+    margin: 10px 0;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    outline: none;
+} 
+.rad .two form input[type=submit] {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+@keyframes change {
+    0% {
+        background-image: url(../imgs/discount-background1.jpg);
+    }
+    50% {
+        background-image: url(../imgs/discount-background2.jpg);
+    }
+    100% {
+        background-image: url(../imgs/discount-background1.jpg);
+    }
+}
+@media (max-width:400px) {
+    .rad {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .rad p {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px 0;
+    }
+    .rad .two form {
+        width: 80%;
+    }
+    .rad .two {
+        padding-top: 50px;
+    }
+    .rad .image .one h1 {
+        font-size: 35px;
+    }
+    .rad  .two h1 {
+        font-size: 35px;
+    }
+}
+@media (min-width:400px) and  (max-width:992px) {
+    .rad {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .rad p {
+        max-width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .rad .two form {
+        width: 80%;
+    }
+    .rad .two {
+        padding-top: 50px;
     }
 }

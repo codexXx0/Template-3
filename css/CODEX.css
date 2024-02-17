@@ -99,6 +99,15 @@ a {
         padding-left:0 ;
         padding-right:0 ;
     }
+    .container .lable {
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px 30px;
+        border: 2px solid black;
+        width: fit-content;
+        transition: 0.3s ease-in-out;
+        transition-delay: 0.4s;
+    }    
 }
 @media (min-width:400px) and (max-width:675px){
     .container{
@@ -1358,7 +1367,7 @@ a {
     border-radius: 25px;
     border: navajowhite;
 }
-@media (min-width:00px) and (max-width:400px) {
+@media (min-width:0px) and (max-width:400px) {
     .events .container .boxs img {
         max-width: 60%;
         align-self: center;
@@ -1375,4 +1384,7 @@ a {
         max-width: 60%;
         align-self: center;
     }    
+    .events .container .footer form input[type=email] {
+        width: 200px;
+    }
 }

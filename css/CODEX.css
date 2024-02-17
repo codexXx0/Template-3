@@ -1638,11 +1638,36 @@ a {
     z-index: -2;
 }
 .stats .container .boxs .box {
+    position: relative;
     background-color: white;
     border-radius: 5px;
     width: 250px;
     padding: 20px;
     box-shadow:  0 0 10px rgba(180, 180, 180, 0.562);
+}
+.stats .container .boxs .box::before {
+    content: "";
+    position: absolute;
+    height: 00%;
+    width: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    transition: 0.3s ease;
+}
+.stats .container .boxs .box::after {
+    content: "";
+    position: absolute;
+    height: 00%;
+    width: 3px;
+    right:  0;
+    top: 0;
+    background-color: var(--main-color);
+    transition: 0.5s ease;
+}
+.stats .container .boxs .box:hover::before ,
+.stats .container .boxs .box:hover::after {
+    height: 100%;
 }
 .stats .container .boxs .box i {
     font-size: 35px;

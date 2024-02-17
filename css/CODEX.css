@@ -1318,7 +1318,6 @@ a {
 }
 .events .container .boxs img {
     max-width: 40%;
-    /* height: 100%; */
     align-self: center;
 }
 .events .container .boxs .box {
@@ -1336,12 +1335,12 @@ a {
 .events .container .boxs .box .timer .time {
     margin: 20px 10px;
     border-radius: 5px;
-    border: 1px solid;
+    border: 1px solid rgb(168, 168, 168);
 }
 .events .container .boxs .box .timer .time h5 {
     margin-bottom: 0;
     margin-top: 0;
-    border-top: 1px solid;
+    border-top: 1px solid rgb(168, 168, 168);
     padding: 5px 10px;
     font-weight: normal;
 }
